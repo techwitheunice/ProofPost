@@ -508,7 +508,7 @@ Respond ONLY with valid JSON, no preamble or markdown:
       showState('posts');
     } catch (err) {
       showState('error');
-      document.getElementById('error-box').innerHTML = '<strong>Something went wrong:</strong> ' + err.message + '<br><br>Check your API key at <a href="https://console.anthropic.com" target="_blank" style="color:#c0392b">console.anthropic.com</a>';
+      document.getElementById('error-box').innerHTML = '<strong>Something went wrong:</strong> ' + err.message + '<br><br>Please try again in a moment.';
     } finally {
       document.getElementById('generate-btn').disabled = false;
     }
